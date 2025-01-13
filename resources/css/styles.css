@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	/* Defining color variables */
 	--Violet: hsl(257, 40%, 49%);
@@ -14,37 +15,97 @@
 	--bottom-margin-large: margin: 0px 0px 40px 0px;
 	--bottom-margin-huge: margin: 0px 0px 80px 0px;
 }
+
+@font-face {
+	font-family: Open Sans;
+	src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+	font-family: Poppins Regular;
+	src: url(../fonts/Poppins-Regular.ttf);
+}
+
 body {
-	
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	background: var(--Violet);
+	background-image: url("../images/bg-desktop.svg");
 }
-.header-row{
 
+.header-row {
+	width: 80vw;
+	margin: 40px auto 0;
 }
-.logo-image{
 
-}
-.main-container{
+/* .logo-image{	
+} */
 
+.main-container {
+	color: white;
+	width: 80vw;
+	margin: 0 auto 0;
+	display: flex;
 }
+
 .left-column{
-
+	flex: 1;
 }
-.right-column{
 
-}
-.heading-text{
+/* .illustration-image{
+} */
 
+.right-column {
+	flex: 1;
+	padding: 40px 0 0 40px;
 }
-.description-text{
 
+.heading-text {
+	font-size: 38px;
+	font-family: Poppins Regular;
+	width: 70%;
+	margin: 0 0 30px 0;
 }
-.register-button{
 
+.description-text {
+	font-size: 18px;
+	font-family: Open Sans;
+	width: 83%;
+	line-height: 30px;
+	margin: 0 0 20px 0;
 }
-.attribution {
+
+.register-button {
+	font-size: 18px;
+	font-family: Poppins Regular;
+	color: var(--Soft-Magenta);
+	padding: 15px 60px;
+	background-color: white;
+	border: none;
+	border-radius: 40px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.register-button:hover {
+	color: white;
+	background-color: var(--Soft-Magenta);
+}
+
+.attribution { 
+	color: white;
 	font-size: 11px;
 	text-align: center;
+	margin: 25px 0 0 0;
 }
+
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+	color: skyblue;
+}
+
+.attribution a:hover {
+	text-decoration: underline;
 }
