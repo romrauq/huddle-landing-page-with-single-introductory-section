@@ -20,6 +20,7 @@
 	font-family: Open Sans;
 	src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+
 @font-face {
 	font-family: Poppins Regular;
 	src: url(../fonts/Poppins-Regular.ttf);
@@ -49,7 +50,7 @@ body {
 	display: flex;
 }
 
-.left-column{
+.left-column {
 	flex: 1;
 }
 
@@ -81,6 +82,7 @@ body {
 	font-family: Poppins Regular;
 	color: var(--Soft-Magenta);
 	padding: 15px 60px;
+	width: fit-content;
 	background-color: white;
 	border: none;
 	border-radius: 40px;
@@ -94,7 +96,7 @@ body {
 	background-color: var(--Soft-Magenta);
 }
 
-.attribution { 
+.attribution {
 	color: white;
 	font-size: 11px;
 	text-align: center;
@@ -108,4 +110,57 @@ body {
 
 .attribution a:hover {
 	text-decoration: underline;
+}
+
+@media (max-width:475px) {
+	.header-row {
+		width: 80vw;
+		/* margin: 40px auto 0; */
+	}
+
+	.logo-image {
+		width: 150px;
+	}
+
+	.main-container {
+		/* color: white; */
+		width: 80vw;
+		/* margin: 0 auto 0; */
+		/* display: flex; */
+		flex-direction: column;
+	}
+
+	.left-column {
+		flex: 1;
+		margin: 0 0 60px 0;
+	}
+
+	.illustration-image {
+		width: 100%;
+	}
+
+	.right-column {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.heading-text {
+		font-size: 24px;
+		text-align: center;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+
+	.description-text {
+		text-align: center;
+		width: 100%;
+		line-height: 30px;
+		margin: 0 0 20px 0;
+	}
+
+	.register-button {
+		padding: 15px 80px;
+		margin: 0 auto 0;
+	}
 }
